@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro to JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="w3-panel" id="head">
+    <h1>Intro to Javascript</h1>
+
+</header>
+
+<div class="w3-panel w3-deep-purple" id="one">
+    <h2>One</h2>
+    <!--The code in this section changes the display style for two div's - visible display = block
+    invisible display = none-->
+    <button type="button" class="w3-btn-floating w3-teal" onclick="document.getElementById('one').style.display='none';
+    document.getElementById('one-open').style.display='block';">-
+    </button>
+</div>
+<div class="w3-panel">
+    <!--The code in this section changes the visibility of both this and the above panels-->
+    <button type="button" id="one-open" class="w3-btn-floating w3-teal" style="display:none;"
+            onclick="document.getElementById('one').style.display='block'">+
+    </button>
+
+</div>
+<div class="w3-panel w3-teal" id="two">
+    <h2>What time is it?</h2>
+    <!--The code here calls for the system date and time and displays them in the paragraph with the time ID -->
+    <button type="button" class="w3-btn w3-deep-purple"
+            onclick="document.getElementById('time').innerHTML=Date()">
+        What time is it?
+    </button>
+
+    <p id="time"></p>
+
+</div>
+<div class="w3-panel w3-amber" id="three">
+    <h2>Hello there!</h2>
+    <!--The code here greets you as if the computer were River Song and you were the Doctor -->
+    <button type="button" class="w3-btn w3-deep-purple"
+            onclick="document.getElementById('greet').innerHTML = 'Hello Sweetie!'">
+        Whovian Greeting
+    </button>
+
+    <p id="greet"></p>
+</div>
+
+</body>
+</html>
